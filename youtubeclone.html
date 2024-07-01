@@ -1,0 +1,439 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <link rel="icon" href="./youtube_assets/youtube-logo-2431.png">
+    <title>YouTube</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="youtubestyle.css">
+
+</head>
+    <body>
+        <header class="header">
+
+            <div class="header-box1">
+                <button type="button" class="btn-hover header-btn sidebar-menu"><i class="fa-solid fa-bars sidebar-btn btn-hover"></i></button>
+                <img src="./youtube_assets/new youtube image.jpeg" alt="youtube">
+                <sup>IN</sup>
+            </div>
+
+            <div class="header-box2">
+
+                <form action="#" class="search-form">
+
+                    <div class="search-box">
+                        <input type="text" placeholder="Search">
+                        <button type="reset" class="reset-btn btn-hover">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <button type="submit" class="search-btn btn-hover">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+
+                <button type="button" class="microphone btn-hover">
+                    <i class="fa-solid fa-microphone btn-hover"></i>
+                </button>
+
+            </div>
+
+            <div class="header-box3">
+                <button type="button" class="btn-hover header-btn video-box"><i class="fa-solid fa-video"></i></button>
+                <div class="user-video outof_screen">
+                    <ul class="video-option">
+                        <li>
+                            <i class="fa-regular fa-square-caret-right"></i>
+                            <a href="#">Upload video</a>
+                        </li>
+                        <li>
+                            <span class="material-symbols-outlined">online_prediction</span>
+                            <a href="#">Go live</a>
+                        </li>
+                    </ul>
+                </div>
+                <button type="button" class="btn-hover header-btn bell-icon"><i class="fa-regular fa-bell"></i></button>
+                <div class="bellicon-box outof_screen">
+                    <header>
+                        <p>Notifications</p>
+                        <span class="material-symbols-outlined btn-hover">
+                            settings
+                        </span>
+                    </header>
+                    <div class="bell-icon-body">
+                        <i class="fa-regular fa-bell"></i>
+                        <br>
+                        <b>Your notifications live here</b>
+                        <p>Subscribe to your favorite channels</p>
+                        <p>notified about their letest videos</p>
+                    </div>
+                </div>
+                <!-- user login -->
+                <button type="button" class="btn-hover header-btn login-button"><i class="fa-regular fa-circle-user"></i></button>
+
+                <div class="user-login outof_screen">
+
+                    <div class="user-login-data">
+                        <span class="spn1">
+                            <h3 class="user-first-latter">@</h3>
+                        </span>
+                        <span class="userdata">
+                            <p class="username">Login</p>
+                            <p class="useremail"></p>
+                            <a href="#">Create a channel</a>
+                        </span>
+                    </div>
+                    <div class="header-containser">
+                        <ul class="login-list">
+                            <li class="login">
+                                <i class="fa-brands fa-google"></i>
+                                <a href="#login">Google Account</a>
+                            </li>
+                            <li>
+                                <span class="material-symbols-outlined">
+                                    switch_account
+                                </span>
+                                <a href="#">Switch account</a>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                <a href="#">Sign out</a>
+                            </li>
+                            <hr>
+                            <li>
+                                <span class="material-symbols-outlined">
+                                    token
+                                </span>
+                                <a href="#">YouTube Studio</a>
+                            </li>
+                            <li>
+                                <span class="material-symbols-outlined">
+                                    paid
+                                </span>
+                                <a href="#">Purchases and memberships</a>
+                            </li>
+                            <hr>
+                            <li>
+                                <i class="fa-regular fa-user"></i>
+                                <a href="#">Your data in YouTube</a>
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-moon"></i>
+                                <a href="#">Appearance: Device theme</a>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </li>
+                            <li>
+                                <span class="material-symbols-outlined">translate</span>
+                                <a href="#">Language: English</a>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-user-shield"></i>
+                                <a href="#">Restricted Mode: Off</a>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </li>
+                            <li>
+                                <span class="material-symbols-outlined">language</span>
+                                <a href="#">Location: india</a>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-keyboard"></i>
+                                <a href="#">Keyboard shortcuts</a>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </li>
+                            <hr>
+                            <li>
+                                <span class="material-symbols-outlined">settings</span>
+                                <a href="#">Setting</a>
+                            </li>
+                            <hr>
+                            <li>
+                                <i class="fa-regular fa-circle-question"></i>
+                                <a href="#">Help</a>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </li>
+                            <li>
+                                <span class="material-symbols-outlined">feedback</span>
+                                <a href="#">Send feedback</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </header>
+
+        <div class="side-bar1 left-screen">
+            <div class="header-box1">
+                <button type="button" class="btn-hover header-btn sidebar-menu"><i class="fa-solid fa-bars sidebar-btn btn-hover"></i></button>
+                <img src="./youtube_assets/new youtube image.jpeg" alt="youtube">
+                <sup>IN</sup>
+            </div>
+            <ul class="sidebar-list">
+                <li>
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <img src="./youtube_assets/icons8-youtube-shorts-384.png" alt="shorts">
+                    <a href="#">Shorts</a>
+                </li>
+                <li>
+                    <img src="./youtube_assets/icons8-youtube-logo-144.png" alt="sub">
+                    <a href="#">Subscriptions</a>
+                </li>
+                <hr>
+                <li>
+                    <a href="#" style="margin-right: 0.5rem; margin-left: 0.2rem; "><h6>You</h6></a>
+                    <i class="fa-solid fa-angle-right"></i>
+                </li>
+                <li>
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <a href="#">History</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-bars"></i>
+                    <a href="#">Playlists</a>
+                </li>
+                <hr/>
+                <li>
+                    <i class="fa-regular fa-clock"></i>
+                    <a href="#">Watch later</a>
+                </li>
+                <li>
+                    <span class="material-symbols-outlined">
+                        thumb_up
+                    </span>
+                    <a href="#">Liked videos</a>
+                </li>
+                <hr/>
+                <h6 style="margin: 1rem 0 0 1rem;">Explore</h6>
+                <li>
+                    <span class="material-symbols-outlined">
+                        local_fire_department
+                    </span>
+                    <a href="#">Trending</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <a href="#">Shopping</a>
+                </li>
+                <li>
+                    <span class="material-symbols-outlined">
+                        music_note
+                    </span>
+                    <a href="#">Music</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-clapperboard"></i>
+                    <a href="#">Movies</a>
+                </li>
+                <li>
+                    <img src="./youtube_assets/icons8-youtube-live-256.png" alt="live">
+                    <a href="#">Live</a>
+                </li>
+                <li>
+                    <span class="material-symbols-outlined">
+                        sports_esports
+                    </span>
+                    <a href="#">Gaming</a>
+                </li>
+                <li>
+                    <span class="material-symbols-outlined">
+                        description
+                    </span>
+                    <a href="#">News</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-trophy"></i>
+                    <a href="#">Sports</a>
+                </li>
+                <li>
+                    <i class="fa-regular fa-lightbulb"></i>
+                    <a href="#">Courses</a>
+                </li>
+                <li>
+                    <span class="material-symbols-outlined">
+                        styler
+                    </span>
+                    <a href="#">Fashion &amp; Beauty</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-podcast"></i>
+                    <a href="#">Podcasts</a>
+                </li>
+                <hr>
+                <li>
+                    <i class="fa-solid fa-gear"></i>
+                    <a href="#">Setting</a>
+                </li>
+                <li>
+                    <span class="material-symbols-outlined">
+                        flag
+                    </span>
+                    <a href="#">Report history</a>
+                </li>
+                <li>
+                    <span class="material-symbols-outlined">
+                        help
+                    </span>
+                    <a href="#">Help</a>
+                </li>
+                <li>
+                    <span class="material-symbols-outlined">
+                        feedback
+                    </span>
+                    <a href="#">Send feedback</a>
+                </li>
+                <hr>
+                <div class="sidebar-spn1">
+                    <p>About Press Copyright Contact us Creators Advertise Developers</p>
+                    <br>
+                    <p>Terms Privacy Policy & Safety How YouTube worksTest new features</p>
+                    <span class="sidebar-spn2">
+                        <i class="fa-regular fa-copyright"></i>
+                        <p>2024 Google LLC</p>
+                    </span>
+                </div>
+            </ul>
+        </div>
+
+        <div class="main-body">
+            <div class="side-bar2">
+                <ul class="btnhover">
+                    <li>
+                        <i class="fa-solid fa-house"></i>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <img src="./youtube_assets/icons8-youtube-shorts-384.png" alt="Shorts">
+                        <a href="#">Shorts</a>
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined">
+                            subscriptions
+                        </span>
+                        <a href="#">Subscription</a>
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined">video_library</span>
+                        <br>
+                        <a href="#">You</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="subject-options">
+                <ul>
+                    <li><a href="#" type="button">All</a></li>
+                    <li><a href="#" type="button">Data Structure</a></li>
+                    <li><a href="#" type="button">Music</a></li>
+                    <li><a href="#" type="button">Software Engineering</a></li>
+                    <li><a href="#" type="button">Web Series</a></li>
+                    <li><a href="#" type="button">Colleges</a></li>
+                    <li><a href="#" type="button">Gamming</a></li>
+                    <li><a href="#" type="button">Mixes</a></li>
+                    <li><a href="#" type="button">Dramedy</a></li>
+                    <li><a href="#" type="button">APIs</a></li>
+                    <li><a href="#" type="button">Motivation</a></li>
+                    <li><a href="#" type="button">Podcasts</a></li>
+                    <li><a href="#" type="button">Live</a></li>
+                    <li><a href="#" type="button">CPUs</a></li>
+                    <li><a href="#" type="button">Motivation</a></li>
+                </ul>
+            </div>
+            
+            <!-- <div class="cards-box">
+                <div class="card">
+                     <img src="./youtube_assets/dsa.jpg" alt="img" class="card-img-top">
+                     <div class="cards-body">
+                        <h4 class="user-account">@</h4>
+                        <span>
+                            <b class="card-title">Complete Java Placement DSA Course | 500+ Problem Solving</b>
+                            <p class="user-data">Apna College <br>500K view 1 month</p>
+                        </span>
+                     </div>
+                </div>
+
+                <div class="card">
+                    <img src="./youtube_assets/dsa.jpg" alt="img" class="card-img-top">
+                    <div class="cards-body">
+                       <h4 class="user-account">@</h4>
+                       <span>
+                           <b class="card-title">Complete Java Placement DSA Course | 500+ Problem Solving</b>
+                           <p class="user-data">Apna College <br>500K view 1 month</p>
+                       </span>
+                    </div>
+               </div>
+               <div class="card">
+                     <img src="./youtube_assets/dsa.jpg" alt="img" class="card-img-top">
+                     <div class="cards-body">
+                        <h4 class="user-account">@</h4>
+                        <span>
+                            <b class="card-title">Complete Java Placement DSA Course | 500+ Problem Solving</b>
+                            <p class="user-data">Apna College <br>500K view 1 month</p>
+                        </span>
+                     </div>
+                </div>
+
+                <div class="card">
+                    <img src="./youtube_assets/dsa.jpg" alt="img" class="card-img-top">
+                    <div class="cards-body">
+                       <h4 class="user-account">@</h4>
+                       <span>
+                           <b class="card-title">Complete Java Placement DSA Course | 500+ Problem Solving</b>
+                           <p class="user-data">Apna College <br>500K view 1 month</p>
+                       </span>
+                    </div>
+               </div>
+
+               <div class="card">
+                    <img src="./youtube_assets/dsa.jpg" alt="img" class="card-img-top">
+                    <div class="cards-body">
+                        <h4 class="user-account">@</h4>
+                        <span>
+                            <b class="card-title">Complete Java Placement DSA Course | 500+ Problem Solving</b>
+                            <p class="user-data">Apna College <br>500K view 1 month</p>
+                        </span>
+                     </div>
+                </div>
+
+                <div class="card">
+                    <img src="./youtube_assets/dsa.jpg" alt="img" class="card-img-top">
+                    <div class="cards-body">
+                        <h4 class="user-account">@</h4>
+                        <span>
+                            <b class="card-title">Complete Java Placement DSA Course | 500+ Problem Solving</b>
+                            <p class="user-data">Apna College <br>500K view 1 month</p>
+                        </span>
+                     </div>
+                </div>
+
+                <div class="card">
+                    <img src="./youtube_assets/dsa.jpg" alt="img" class="card-img-top">
+                    <div class="cards-body">
+                        <h4 class="user-account">@</h4>
+                        <span>
+                            <b class="card-title">Complete Java Placement DSA Course | 500+ Problem Solving</b>
+                            <p class="user-data">Apna College <br>500K view 1 month</p>
+                        </span>
+                     </div>
+                </div>
+
+            </div> -->
+        </div>
+
+
+
+        <script src="youtubefun.js"></script>
+    </body>
+ </html>

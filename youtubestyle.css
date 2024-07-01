@@ -1,0 +1,458 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+body{
+    overflow: hidden;
+    background-color: black;
+}
+button{
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+body{
+    overflow: hidden;
+}
+p{
+    margin: 0;
+}
+a, hr{
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+.header{
+    position: fixed;
+    display: flex;
+    height: 3.5rem;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 0 1rem;
+}
+/* first header box fun: side bar menu, brand logo, super tag(IN) */
+.header-box1{
+    display: flex;
+    height: 100%;
+    width: 10.5rem;
+    align-items: center;
+}
+.header-box1 sup{
+    font-size: 0.5rem;
+    margin: 0 0 0.5rem 0.1rem;
+}
+.header-box1 img{
+    height: 1.2rem;
+    width: 5rem;
+    margin-left: 0.8rem;
+    cursor: pointer;
+}
+/* second header: input box, cross btn, search btn, microphone */
+.header-box2{
+    display: flex;
+    flex: 1;
+    height: 100%;
+    align-items: center;
+}
+.search-form{
+    display: flex;
+    justify-content: flex-end;
+    width: 70%;
+    height: 2.3rem;
+}
+.search-box{
+    display: flex;
+    justify-content: flex-end;
+    width: 60%;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border: 1px solid rgb(99, 99, 99);
+    /* margin-left: 15%;
+    padding: 0 0 0 10%; */
+}
+input{
+    margin-left: 1rem;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    color: white;
+}
+.reset-btn{
+    padding: 0 0.8rem 0 0.8rem;
+    font-size: 1.2rem;
+}
+.search-btn{
+    width: 3rem;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border: 1px solid rgb(99, 99, 99);
+    background-color: rgb(36, 36, 36);
+}
+.microphone{
+    width: 2.1rem;
+    height: 2.1rem;
+    margin-left: 1.5rem;
+    border-radius: 50%;
+    background-color: rgb(36, 36, 36);
+}
+/* headre box3 user function */
+.header-box3{
+    width: 15rem;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    color: rgb(227, 227, 227);
+}
+.header-btn{
+    height: 2.2rem;
+    width: 2.2rem;
+    border-radius: 50%;
+}
+/* ------video live option */
+.user-video{
+    position: absolute;
+    top: 3.5rem;
+    right: 7.5rem;
+    height: 5rem;
+    width: 9rem;
+    background-color: rgb(40, 39, 39);
+    border-radius: 15px;
+}
+.video-option{
+    list-style-type: none;
+    padding-left: 0;
+}
+.video-option li{
+    display: flex;
+    margin-top: 0.5rem;
+    padding: 0.4rem 0 0 1rem;
+}
+.video-option li a{
+    color: white;
+    margin: 0 0 0 0.5rem;
+}
+.video-option li:hover{
+    cursor: pointer;
+    background-color: rgb(76, 76, 76);
+}
+/* bell icon */
+.bellicon-box{
+    position: absolute;
+    top: 3rem;
+    right: 5rem;
+    width: 25rem;
+    height: 80vh;
+    background-color: rgb(53, 53, 53);
+    box-shadow: 0 0 10px gray;
+    border-radius: 15px;
+}
+.bellicon-box header{
+    position: fixed;
+    display: flex;
+    width: 25rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem 1rem;
+    border-bottom: 1px solid white;
+}
+.bellicon-box span{
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.bell-icon-body{
+    padding: 1rem;
+    margin-top: 3rem;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    color: rgb(95, 94, 94);
+}
+.bell-icon-body::-webkit-scrollbar{
+    display: none;
+}
+.bell-icon-body i{
+    font-size: 5rem;
+}
+
+/* -------user login detail */
+.user-login{
+    position: absolute;
+    top: 1rem;
+    right: 5rem;
+    width: 17rem;
+    height: 80vh;
+    box-shadow: 0 0 5px rgb(44, 44, 44);
+    border-radius: 15px;
+    background-color: rgb(53, 53, 53);
+}
+.user-login-data{
+    position: absolute;
+    display: flex;
+    height: 5rem;
+    width: 100%;
+    z-index: 1;
+    border-bottom: 1px solid white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: rgb(53, 53, 53);
+}
+.spn1{
+    background-color: rgb(70, 69, 69);
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    padding: 0.1rem 0 0 0.5rem;
+    margin: 0.5rem 0.5rem 0 0.5rem; 
+}
+.userdata{
+    font-size: 0.9rem;
+}
+.userdata p{
+    margin: 0.5rem 0 0 0.3rem;
+}
+.header-containser{
+    margin-top: 0.8rem;
+    width: 100%;
+    height: 95%;
+    overflow: auto;
+}
+.header-containser::-webkit-scrollbar{
+    display: none;
+}
+.login-list{
+    margin-top: 5rem;
+    padding-left: 0;
+    list-style-type: none;
+}
+.login-list li{
+    height: 2.5rem;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+}
+.login-list li:hover{
+    cursor: pointer;
+    background-color: rgb(76, 76, 76);
+}
+.login-list a{
+    color: rgb(203, 202, 202);
+    margin: 0 0 0 1rem;
+}
+.login-list .fa-chevron-right{
+    margin-left: 1rem;
+}
+.login-list span{
+    margin-left: -0.2rem;
+}
+
+.btn-hover:hover{
+    background-color: rgb(70, 70, 70);
+}
+
+/* side bar1 */
+.side-bar1{
+    position: absolute;
+    width: 13.5rem;
+    height: 100vh;
+    color: white;
+    border: 1px solid black;
+    background-color: rgb(0, 0, 0);
+}
+.side-bar1 .header-box1{
+    position: fixed;
+    display: flex;
+    height: 3.2rem;
+    width: 13.5rem;
+    align-items: center;
+    background-color: black;
+    padding: 0.98rem;
+}
+.sidebar-list{
+    width: 100%;
+    height: 100%;
+    padding: 3.5rem 0 0 0;
+    overflow: auto;
+}
+.sidebar-list::-webkit-scrollbar{
+    width: 6px;
+    height: 0.2px;
+}
+.sidebar-list::-webkit-scrollbar-thumb{
+    background-color: rgb(165, 163, 163);
+    border-radius: 15px;
+    height: 2px;
+}
+.sidebar-list li{
+    display: flex;
+    align-items: center;
+    height: 2.5rem;
+    margin: 0.2rem;
+    font-size: 0.8rem;
+    border-radius: 10px;
+    padding-left: 1.3rem;
+    cursor: pointer;
+}
+.side-bar1 i{
+    padding-left: 0.2rem;
+}
+.side-bar1 li a{
+    color: white;
+    margin-left: 0.6rem;
+}
+.side-bar1 h6, span{
+    margin-bottom: 0;
+    margin-left: -0.2rem;
+}
+.sidebar-list img{
+    height: 1.3rem;
+}
+.sidebar-list li:hover{
+    background-color: rgb(33, 33, 33);
+}
+.sidebar-spn1{
+    height: 13rem;
+    width: 90%;
+    margin: 1rem;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    color: rgb(164, 164, 164);
+}
+.sidebar-spn2{
+    display: flex;
+    align-items: center;
+    margin-top: 0.6rem;
+    font-size: 0.7rem;
+    color: rgb(78, 77, 77);
+}
+
+/* main box */
+.main-body{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+/* side bar 2 */
+.side-bar2{
+    width: 4rem;
+    background-color: black;
+}
+.side-bar2 ul{
+    color: white;
+    margin-top: 3rem;
+    list-style-type: none;
+    padding: 0.3rem;
+}
+.side-bar2 li{
+    text-align: center;
+    align-content: center;
+    height: 4rem;
+    margin-top: 0.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    padding: 0.2rem;
+}
+.side-bar2 a{
+    font-size: 0.7rem;
+    color: rgb(225, 225, 225);
+}
+.side-bar2 img{
+    height: 1.3rem;
+}
+.side-bar2 li:hover{
+    background-color: rgb(44, 44, 44);
+}
+
+/* youtube videos */
+.youtube-videos{
+    flex: 1;
+    background-color: black;
+    z-index: -5;
+}
+.subject-options{
+    margin-top: 3.5rem;
+    height: 3rem;
+    width: 100%;
+    border: 1px solid white;
+}
+.subject-options ul{
+    display: flex;
+    list-style-type: none;
+    height: 100%;
+    align-items: center;
+    margin-bottom: 0;
+}
+.subject-options li{
+    border: 1px solid white;
+}
+
+
+
+/* above is a part of list(ul) */
+.cards-box {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    flex-wrap: wrap;
+    overflow: auto;
+    margin: 7rem 0 0 3.5rem;
+}
+.card{
+    width: 18rem;
+    height: 15rem;
+    background-color: black;
+    margin: 0.5rem 0.7rem;
+}
+.cards-body{
+    display: flex;
+    color: white;
+}
+.cards-body h4{
+    height: 2.7rem;
+    width: 5rem;
+    border-radius: 50%;
+    background-color: rgb(57, 57, 57);
+    margin: 0.3rem 0 0 0.3rem;
+    align-content: center;
+    text-align: center;
+}
+.cards-body span{
+    font-size: 1rem;
+    margin: 0.3rem;
+}
+.cards-body span p{
+    font-size: 0.7rem;
+    color: rgb(151, 147, 147);
+}
+
+
+
+
+
+
+.outof_screen{
+    right: -700px;
+}
+.left-screen{
+    left: -500px;
+}
+.sidebar-effect{
+    margin-left: 10rem;
+}
+
+
+
+
+
+
+
+
